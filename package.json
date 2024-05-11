@@ -1,5 +1,5 @@
 {
-  "homepage": "https://harsh9090.github.io/portfolio_Repo",
+  "homepage": "https://harsh9090.github.io/portfolio_Repo/",
   "name": "portfolio_application",
   "version": "0.1.0",
   "private": true,
@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.1.1"
   }
 }
