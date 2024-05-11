@@ -1,0 +1,91 @@
+.contact-section {
+    text-align: center;
+    min-height: 90vh;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    gap: 20px; /* Adds space between the email and form */
+}
+
+.email-address, .contact-form {
+    flex-basis: 48%; /* Ensure they take up equal width */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for the panels */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.email-address h3, .contact-form h3 {
+    margin-bottom: 15px;
+    color: #AAD1E6; /* Light blue for sub-headings */
+    font-size: 1.5rem;
+}
+
+.email-address p, .contact-form form {
+    margin-bottom: 0;
+}
+
+a {
+    color: #F0F0F0; /* Light color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #CDDC39; /* Light green for hover effect */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2); /* Dark input background for contrast */
+    color: #fff; /* White text input */
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #aaa; /* Lighter text for placeholders */
+}
+
+.contact-form button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF; /* Blue that stands out */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+    transform: translateY(-2px); /* Lift button on hover for interaction */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 2; /* Resets the gap for small screens */
+    }
+    
+    .email-address, .contact-form {
+        align-items: center;
+        flex-basis: auto; /* Allows the boxes to fill the container */
+        margin: auto;
+    }
+}

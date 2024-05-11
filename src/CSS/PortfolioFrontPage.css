@@ -1,0 +1,106 @@
+.portfolio-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4% 6%; /* Use percentage for padding to be more responsive */
+  color: #fff;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.main-header h1 {
+  margin: 0.5em 0; /* Add some margin to the top and bottom */
+  font-size: 3vw; /* Responsive font size */
+  line-height: 1.2; /* Improve line spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing {
+  margin: 0; /* Remove margins that could affect centering */
+  padding: 0;
+  /* border-right: 3px solid orange; Adjust caret size */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(40, end), blink-caret .5s step-end infinite;
+   text-align: center; /* Center the text within the element itself */
+  width: 100%;
+}
+
+.tagline {
+  font-style: italic;
+  margin: 1em 0; /* Add some margin to top and bottom */
+  font-size: 2.5vw; /* Responsive font size */
+  animation: fadeIn 2s ease-out;
+}
+
+.download-cv-button {
+  font-size: 1.5rem; /* Responsive font size */
+  padding: 0.5rem 0.5rem; /* Padding proportional to the font size */
+  border-radius: 5px;
+  color: #007BFF;
+  transition: background-color 0.3s;
+  max-width: 100%; /* Ensure it doesn't overflow */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.download-cv-button:hover {
+   background-color: #1E90FF; /* A darker shade of gold for hover */
+  color: #FFFFFF;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .main-header h1  {
+    width: 100%;
+    /* font-size: 5.5vw; */
+    font-size: larger;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .typing {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .tagline {
+    font-size: 5vw;
+  }
+  .h1 {
+    font-size: 5rem;
+  }
+  .download-cv-button {
+    font-size: 4vw;
+  }
+}
+
+/* Animations */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes typing {
+  from { width: 0; border-right: 3px solid orange; }
+  to { width: 100%; border-right: none; } /* Remove the cursor after typing */
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent }
+  50% { border-color: orange }
+}
+@media only screen and (max-width: 768px) {
+  .typing{
+    font-size: 1.5rem;
+  }
+}
